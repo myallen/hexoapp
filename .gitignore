@@ -5,6 +5,7 @@
 yarn.lock
 package-lock.json
 node_modules/
+CNAME
 
 # Ignore unused verdors' files
 themes/next/source/lib/fancybox/*
