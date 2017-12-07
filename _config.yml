@@ -5,10 +5,11 @@
 # Site
 title: Laphiler
 subtitle: quantum world
-description:
+description: quantum world
 author: Laphiler
 language:
 timezone:
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -80,3 +81,6 @@ deploy:
   type: git
   repo: https://github.com/laphiler/laphiler.github.io.git
   branch: master
+
+# Avatar
+avatar: /images/laphiler.png
