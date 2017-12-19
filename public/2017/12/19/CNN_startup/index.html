@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="AI,Deep learning," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="Wars come and go, but my soldiers stay eternal.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Laphiler">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta name="description" content="全连接神经网络最大问题是参数爆炸，容易影响计算速度和导致过拟合问题。而CNN则通过局部连接、权值共享等方法避免了这一难题。 CNN 一般架构输入层卷积层过滤器：卷积层的过滤器(filter)或者叫内核(kernel)可以将当前层神经网络上的一个子节点矩阵转化为下一层神经网络上的一个单位节点矩阵。过滤器的尺寸(size)">
+<meta name="keywords" content="AI,Deep learning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="卷积神经网络CNN入门">
+<meta property="og:url" content="http://yoursite.com/2017/12/19/CNN_startup/index.html">
 <meta property="og:site_name" content="Laphiler">
-<meta property="og:description" content="Wars come and go, but my soldiers stay eternal.">
+<meta property="og:description" content="全连接神经网络最大问题是参数爆炸，容易影响计算速度和导致过拟合问题。而CNN则通过局部连接、权值共享等方法避免了这一难题。 CNN 一般架构输入层卷积层过滤器：卷积层的过滤器(filter)或者叫内核(kernel)可以将当前层神经网络上的一个子节点矩阵转化为下一层神经网络上的一个单位节点矩阵。过滤器的尺寸(size)或者长和宽是用人工指定的，常用的过滤器尺寸有3x3或者5x5，而过滤器处理的矩阵">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-12-19T13:35:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Laphiler">
-<meta name="twitter:description" content="Wars come and go, but my soldiers stay eternal.">
+<meta name="twitter:title" content="卷积神经网络CNN入门">
+<meta name="twitter:description" content="全连接神经网络最大问题是参数爆炸，容易影响计算速度和导致过拟合问题。而CNN则通过局部连接、权值共享等方法避免了这一难题。 CNN 一般架构输入层卷积层过滤器：卷积层的过滤器(filter)或者叫内核(kernel)可以将当前层神经网络上的一个子节点矩阵转化为下一层神经网络上的一个单位节点矩阵。过滤器的尺寸(size)或者长和宽是用人工指定的，常用的过滤器尺寸有3x3或者5x5，而过滤器处理的矩阵">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/2017/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/19/CNN_startup/"/>
 
 
 
 
 
-  <title>Archive | Laphiler</title>
+  <title>卷积神经网络CNN入门 | Laphiler</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,111 +249,155 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        Um..! 2 posts in total. Keep on posting.
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/19/CNN_startup/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Laphiler Zhang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/laphiler.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Laphiler">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/12/19/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">卷积神经网络CNN入门</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-19T21:35:07+08:00"
-              content="2017-12-19" >
-          12-19
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-19T21:35:07+08:00">
+                2017-12-19
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/19/CNN_startup/" itemprop="url">
-              
-                <span itemprop="name">卷积神经网络CNN入门</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-19T21:35:07+08:00"
-              content="2017-12-19" >
-          12-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <p>全连接神经网络最大问题是参数爆炸，容易影响计算速度和导致过拟合问题。而CNN则通过局部连接、权值共享等方法避免了这一难题。</p>
+<h3 id="CNN-一般架构"><a href="#CNN-一般架构" class="headerlink" title="CNN 一般架构"></a>CNN 一般架构</h3><h3 id="输入层"><a href="#输入层" class="headerlink" title="输入层"></a>输入层</h3><h3 id="卷积层"><a href="#卷积层" class="headerlink" title="卷积层"></a>卷积层</h3><p><strong>过滤器</strong>：卷积层的过滤器(filter)或者叫内核(kernel)可以将当前层神经网络上的一个子节点矩阵转化为下一层神经网络上的一个单位节点矩阵。<br>过滤器的尺寸(size)或者长和宽是用人工指定的，常用的过滤器尺寸有3x3或者5x5，而过滤器处理的矩阵深度就是当前层神经网络节点的深度，顾不需要人工指定。而过滤器的深度指的是处理得到的单位矩阵的深度。</p>
+<blockquote>
+<p>过滤器的尺寸指的是输入节点矩阵的大小(例5x5)，过滤器的深度指的是输出单位矩阵的深度(例1x1xZ).</p>
+</blockquote>
+<p><strong>前向传播算法</strong>:<br>过滤器前向传播过程就是用左侧矩阵中的节点通过激活函数(比如ReLU)计算出右侧单位矩阵中节点的过程。</p>
+<h3 id="池化层"><a href="#池化层" class="headerlink" title="池化层"></a>池化层</h3><p>在卷积层之间往往会加上一个池化层(pooling layer)，来缩小矩阵的尺寸，从而减少最后全连接层中的参数。池化层既可以加快计算速度，也有防止过拟合的作用。<br>池化层的计算：池化层的前向传播过程也是通过类似过滤器的结构完成的，但是过滤器中的计算不是节点的加权和，而是通过简单的最大值或者平均值运算，相应的称为最大池化层(max pooling)和平均池化层(average pooling)。实践中，池化层的应用较少。</p>
+<h3 id="全连接层"><a href="#全连接层" class="headerlink" title="全连接层"></a>全连接层</h3><h3 id="softmax层"><a href="#softmax层" class="headerlink" title="softmax层"></a>softmax层</h3>
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/AI/" rel="tag"># AI</a>
+          
+            <a href="/tags/Deep-learning/" rel="tag"># Deep learning</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/19/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -359,6 +405,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -379,8 +429,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -445,6 +504,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#CNN-一般架构"><span class="nav-number">1.</span> <span class="nav-text">CNN 一般架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入层"><span class="nav-number">2.</span> <span class="nav-text">输入层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卷积层"><span class="nav-number">3.</span> <span class="nav-text">卷积层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#池化层"><span class="nav-number">4.</span> <span class="nav-text">池化层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全连接层"><span class="nav-number">5.</span> <span class="nav-text">全连接层</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#softmax层"><span class="nav-number">6.</span> <span class="nav-text">softmax层</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -578,6 +653,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v="></script>
+<script type="text/javascript" src="/js/src/post-details.js?v="></script>
+
+
 
   
 
